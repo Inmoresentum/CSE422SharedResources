@@ -1,12 +1,15 @@
+package Submission_In_Java.Lab1.Question1;
+
 import java.io.*;
 
 public class Question1 {
-    private static final PrintWriter pw = new PrintWriter(new BufferedOutputStream(System.out), true);
+    private static final PrintWriter pw;
     private static final BufferedReader br;
 
     static {
         try {
-            br = new BufferedReader(new InputStreamReader(new FileInputStream("/home/denuvo-drm/Academic/Extra/Practice/src/input.txt")));
+            pw = new PrintWriter(new BufferedOutputStream(new FileOutputStream("/home/denuvo-drm/Academic/Extra/Practice/src/Submission_In_Java/Lab1/Question1/output.txt")));
+            br = new BufferedReader(new InputStreamReader(new FileInputStream("/home/denuvo-drm/Academic/Extra/Practice/src/Submission_In_Java/Lab1/Question1/input.txt")));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }

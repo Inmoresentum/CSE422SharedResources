@@ -1,3 +1,5 @@
+package Submission_In_Java.RandomTest;
+
 import java.io.*;
 
 public class DuplicateChar {

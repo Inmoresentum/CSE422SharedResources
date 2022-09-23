@@ -1,3 +1,5 @@
+package Submission_In_Java.RandomTest;
+
 import java.io.*;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -44,7 +46,7 @@ public class BFS {
         deque.addLast(start);
         while (!deque.isEmpty()) {
             int curVertex = deque.getFirst();
-            pw.println("BFS at " + curVertex);
+            pw.println("Submission_In_Java.RandomTest.BFS at " + curVertex);
             for (var k : graph.get(curVertex)) {
                 if (!visited[k]) {
                     visited[k] = true;
