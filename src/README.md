@@ -1,6 +1,6 @@
 # CSE422 Fall 2022 Lab(s)
 
-This repository contains lab assignment(s) solutions for Lab Assignment(s) in both Java and python.
+This repository contains **CSE422 Fall** lab assignment(s) solutions in both _**Java**_ and **_python_**.
 
 ## System Requirements
 
