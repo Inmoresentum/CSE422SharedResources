@@ -1,4 +1,4 @@
-package Submission_In_Java.Lab1.Question2;
+package Submission_In_Java.Practice.Question2;
 
 import java.io.*;
 import java.util.ArrayDeque;

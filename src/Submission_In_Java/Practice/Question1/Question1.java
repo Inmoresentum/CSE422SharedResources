@@ -1,4 +1,4 @@
-package Submission_In_Java.Lab1.Question1;
+package Submission_In_Java.Practice.Question1;
 
 import java.io.*;
 
