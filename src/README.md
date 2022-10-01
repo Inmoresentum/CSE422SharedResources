@@ -27,7 +27,7 @@ you will have to install the following things.
    ```shell
     python --version
    ```
-    - **Note**: Unix like operating system (`OS X, Linux and BSD`) `python` comes with the operating system itself.
+    * **Note**: Unix like operating system (`OS X, Linux and BSD`) `python` comes with the operating system itself.
 
 ## Setup
 
