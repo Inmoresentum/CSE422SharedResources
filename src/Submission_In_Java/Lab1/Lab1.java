@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class Lab1 {
-    private static final PrintWriter pw = new PrintWriter(new BufferedOutputStream(System.out), true);
+    private static final PrintWriter pw = new PrintWriter(new BufferedOutputStream(System.out));
     private static BufferedReader br;
 
     static {
@@ -35,6 +35,7 @@ public class Lab1 {
         pw.print("Destination: ");
         pw.flush();
         String destination = new StringTokenizer(br.readLine()).nextToken();
+        br.close();
         // Need to write A*
         aStarSearch(source, destination);
         if (distance.get(destination) == Integer.MAX_VALUE) {
@@ -49,6 +50,7 @@ public class Lab1 {
             curCity = parent.get(curCity);
             path.add(curCity);
         }
+        //noinspection DuplicatedCode
         Collections.reverse(path);
         for (int i = 0; i < path.size() - 1; i++) {
             pw.print(path.get(i) + " -> ");
