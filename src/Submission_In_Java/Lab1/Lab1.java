@@ -9,7 +9,7 @@ public class Lab1 {
 
     static {
         try {
-            br = new BufferedReader(new InputStreamReader(new FileInputStream("/home/denuvo-drm/Academic/Extra/Practice/src/Submission_In_Java/Lab1/input.txt")));
+            br = new BufferedReader(new InputStreamReader(new FileInputStream("input.txt")));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
@@ -28,6 +28,7 @@ public class Lab1 {
         // Build the graph
         buildGraph();
         // Need to take input from the console
+        // So re-assigning it to the std i/o
         br = new BufferedReader(new InputStreamReader(System.in));
         pw.print("Start Node: ");
         pw.flush();
@@ -35,7 +36,7 @@ public class Lab1 {
         pw.print("Destination: ");
         pw.flush();
         String destination = new StringTokenizer(br.readLine()).nextToken();
-        br.close();
+        br.close(); // Closing the input stream
         // Need to write A*
         aStarSearch(source, destination);
         if (distance.get(destination) == Integer.MAX_VALUE) {
@@ -122,7 +123,6 @@ public class Lab1 {
 
     private static class Node {
         private int heuristicValue;
-        //int actualCost = Integer.MAX_VALUE;
         private final List<StringIntPair> adjNodes = new ArrayList<>();
     }
 }
