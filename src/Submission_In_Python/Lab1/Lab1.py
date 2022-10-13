@@ -46,7 +46,7 @@ def build_graph():
 build_graph()
 
 
-# Seems like things works! So now it's time to aStarSearch and end this shit. I wish I could do that in Java
+# Seems like things works! So now it's time to aStarSearch and end this assignment.
 def a_start_search(source: str, destination: str):
     distance[source] = 0
     final_cost = graph.get(source).heuristic_value
