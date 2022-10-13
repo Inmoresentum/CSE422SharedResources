@@ -18,6 +18,10 @@ you will have to install the following things.
    ```shell
     java --version
    ```
+   To check `javac` version run the following command.
+   ```shell
+    javac --version
+   ```
 
 2. Python
 
@@ -37,7 +41,8 @@ To set up, please follow these steps:
 
 1. Clone the repo
 
-   Make sure that you have [git](https://git-scm.com/downloads) installed. To check run `git --version` in your terminal.
+   Make sure that you have [git](https://git-scm.com/downloads) installed. To check run `git --version` in your
+   terminal.
    ```shell
     git clone https://github.com/Inmoresentum/CSE422SharedResources
    ```
