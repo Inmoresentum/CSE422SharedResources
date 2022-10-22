@@ -1,6 +1,10 @@
 import sys
 from queue import PriorityQueue
 
+'''
+    Please use Python 3.10.8 or higher
+'''
+
 
 class Node:
     def __init__(self):
@@ -46,12 +50,12 @@ def build_graph():
 build_graph()
 
 
-# Seems like things works! So now it's time to aStarSearch and end this assignment.
+# Time to do a star search
 def a_start_search(source: str, destination: str):
     distance[source] = 0
     final_cost = graph.get(source).heuristic_value
     pq: PriorityQueue[tuple[int, str, int]] = PriorityQueue()
-    # final_cost, city_name, distance/cost
+    # putting in tuple in this format final_cost, city_name, distance/cost
     pq.put((final_cost, source, 0))
     while not pq.empty():
         cur_final_cost, cur_visiting_node, cur_distance = pq.get()
