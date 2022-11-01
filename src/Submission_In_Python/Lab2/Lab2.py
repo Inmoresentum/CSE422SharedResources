@@ -4,6 +4,10 @@ from typing import Final
 
 '''
     Please use Python 3.10.8 or higher
+    Name: ATHAR NOOR MOHAMMAD RAFEE
+    ID: 20101396
+    SECTION: 9
+    CSE423 LAB ASSIGNMENT 02 FALL 2022
 '''
 
 MIN_VALUE: Final[int] = -sys.maxsize - 1
