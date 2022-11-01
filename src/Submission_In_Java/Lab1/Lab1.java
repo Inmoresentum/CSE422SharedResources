@@ -9,7 +9,7 @@ public class Lab1 {
 
     static {
         try {
-            br = new BufferedReader(new InputStreamReader(new FileInputStream("input.txt")));
+            br = new BufferedReader(new InputStreamReader(new FileInputStream("~ path to your input.txt")));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }

@@ -81,6 +81,7 @@ a_start_search(starting_node, ending_node)
 if distance.get(ending_node) == int(1e9):
     print("NO PATH FOUND")
     sys.exit(0)
+
 print(distance.get(ending_node))
 path: list[str] = []
 cur_node = ending_node
@@ -89,6 +90,7 @@ while cur_node != starting_node:
     cur_node = parent.get(cur_node)
 path.append(starting_node)
 path.reverse()
+
 for i in range(len(path) - 1):
-    print(path[i] + " -> ", end="")
+    print(f"""{path[i]} -> """, end="")
 print(path[len(path) - 1])
