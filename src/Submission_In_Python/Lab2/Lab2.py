@@ -63,6 +63,7 @@ def take_input_and_set_values() -> None:
     if len(student_id) != 8:
         raise Exception("Student id must need to be of length 8")
     global min_limit, max_limit, total_number_of_shaffle, total_points_to_win
+
     min_limit = int(student_id[4])
     max_limit = round(int(student_id[6:][::-1]) * 1.5)
     total_points_to_win = int(student_id[6:][::-1])
@@ -103,7 +104,7 @@ print(f"limits: {limits}")
 print(f"Total points to win {total_points_to_win}")
 print(f"Achieved point by applying alpha-beta pruning = {achieved_points}")
 print("The Winner is Megatron" if achieved_points < total_points_to_win else "The winner is Optimus Prime")
-# Task shuffle
+# Task2 shuffle
 shuffle()
 print("\nAfter shuffle:")
 print(f"List of all points values from each shuffle: {list_of_points_values_after_shuffle}")
