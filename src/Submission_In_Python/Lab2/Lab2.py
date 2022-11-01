@@ -2,6 +2,10 @@ import random
 import sys
 from typing import Final
 
+'''
+    Please use Python 3.10.8 or higher
+'''
+
 MIN_VALUE: Final[int] = -sys.maxsize - 1
 MAX_VALUE: Final[int] = sys.maxsize
 
