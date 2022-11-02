@@ -1,14 +1,17 @@
+"""
+    Name: ATHAR NOOR MOHAMMAD RAFEE
+    ID: 20101396
+    SECTION: 9
+    CSE422 LAB ASSIGNMENT 02 FALL 2022
+"""
+
 import random
 import sys
 from typing import Final
 
-'''
+"""
     Please use Python 3.10.8 or higher
-    Name: ATHAR NOOR MOHAMMAD RAFEE
-    ID: 20101396
-    SECTION: 9
-    CSE423 LAB ASSIGNMENT 02 FALL 2022
-'''
+"""
 
 MIN_VALUE: Final[int] = -sys.maxsize - 1
 MAX_VALUE: Final[int] = sys.maxsize
@@ -97,11 +100,11 @@ def get_stat() -> tuple[int, int]:
 
 
 initialize()
-# test: list[int] = [66, 74, 14, 73, 19, 26, 32, 40]
+# Task1
 achieved_points = alpha_beta_pruning(0, 0, True, limits, MIN_VALUE, MAX_VALUE)
 print("Generated 8 random points between the minimum and maximum point")
 print(f"limits: {limits}")
-print(f"Total points to win {total_points_to_win}")
+print(f"Total points to win: {total_points_to_win}")
 print(f"Achieved point by applying alpha-beta pruning = {achieved_points}")
 print("The Winner is Megatron" if achieved_points < total_points_to_win else "The winner is Optimus Prime")
 # Task2 shuffle
