@@ -9,6 +9,9 @@ public class Lab2 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final PrintWriter pw = new PrintWriter(new BufferedOutputStream(System.out));
 
+    private static void alphaBetaPunning() {
+
+    }
 
     public static void main(String[] args) {
         // Adding by tonight as you can see.
