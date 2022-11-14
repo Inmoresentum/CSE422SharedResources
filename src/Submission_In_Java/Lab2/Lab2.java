@@ -4,6 +4,12 @@ import java.io.*;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
+/**
+ * <h1 style="color:orange;">
+ * Todo: Please use JDK version 18.0.2 or higher or else code may not compile properly!
+ * </h1>
+ */
+
 public class Lab2 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final PrintWriter pw = new PrintWriter(new BufferedOutputStream(System.out)
@@ -60,7 +66,7 @@ public class Lab2 {
 
     private static void createRandomListOfPoints() {
         for (int i = 0; i < 8; i++) {
-            points.add(ThreadLocalRandom.current().nextInt(minLimit, maxLimit));
+            points.add(ThreadLocalRandom.current().nextInt(minLimit, maxLimit + 1));
         }
     }
 
