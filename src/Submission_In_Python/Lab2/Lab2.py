@@ -53,7 +53,7 @@ list_of_points_values_after_shuffle: list[int] = []
 min_limit: int | None = None
 max_limit: int | None = None
 total_points_to_win: int | None = None
-total_number_of_shaffle: int | None = None
+total_number_of_shuffle: int | None = None
 
 
 def initialize() -> None:
@@ -65,12 +65,12 @@ def take_input_and_set_values() -> None:
     student_id = input("Enter your student ID\n").replace("0", "8")
     if len(student_id) != 8:
         raise Exception("Student id must need to be of length 8")
-    global min_limit, max_limit, total_number_of_shaffle, total_points_to_win
+    global min_limit, max_limit, total_number_of_shuffle, total_points_to_win
 
     min_limit = int(student_id[4])
     max_limit = round(int(student_id[6:][::-1]) * 1.5)
     total_points_to_win = int(student_id[6:][::-1])
-    total_number_of_shaffle = int(student_id[3])
+    total_number_of_shuffle = int(student_id[3])
 
 
 def create_random_list_of_points() -> None:
@@ -83,7 +83,7 @@ def shuffle_list() -> None:
 
 
 def shuffle() -> None:
-    for i in range(total_number_of_shaffle):
+    for i in range(total_number_of_shuffle):
         shuffle_list()
         list_of_points_values_after_shuffle.append(alpha_beta_pruning(0, 0, True,
                                                                       limits, MIN_VALUE, MAX_VALUE))
@@ -113,4 +113,4 @@ print("\nAfter shuffle:")
 print(f"List of all points values from each shuffle: {list_of_points_values_after_shuffle}")
 total_win_count, maximum_value = get_stat()
 print(f"The maximum value of all shuffles: {maximum_value}")
-print(f"Won {total_win_count} times out of {total_number_of_shaffle} number of shuffles")
+print(f"Won {total_win_count} times out of {total_number_of_shuffle} number of shuffles")
