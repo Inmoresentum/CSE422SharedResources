@@ -1,6 +1,10 @@
 import random
 from typing import Final
 
+'''
+    Please use Python 3.10.8 or higher
+'''
+
 # Declaring some global variables
 number_of_batsmen: int = 0
 target_score: int = 0
@@ -44,8 +48,8 @@ def calculate_fitness(cur_configuration: list[int]) -> int:
 
 def select_two_parent(fitness_values: list[int]) -> list[int]:
     # Need to generate two random number,
-    # then do a battle against them and the winning one.
-    # Do it again for second parent as well!
+    # then do a battle against them and then take the winning one.
+    # repeat it again for second parent as well!
     pair: list[int] = []
     i: int = 0
     while i < 2:
@@ -102,8 +106,9 @@ def genetic_algo() -> None:
         print(f"'{list_of_batsmen[i][0]}',", end=" ")
     print(f"'{list_of_batsmen[number_of_batsmen - 1][0]}']")
     for i in range(MAX_NUMBER_OF_ITERATION):
-        # First we need to check for the fitness values
-        # if any configuration meets the requirements.
+        # First we need to check the fitness values of population
+        # if any configuration meets the requirements then take it.
+        # else continue with genetic algorithm
         for j in range(len(population)):
             list_of_fitness_values[j] = calculate_fitness(population[j])
             if list_of_fitness_values[j] == 100:
@@ -113,6 +118,7 @@ def genetic_algo() -> None:
                 break
         if break_outer_loop:
             break
+
         # Need to do cross over
         for j in range(int(len(population) / 2)):
             selected_parent = select_two_parent(list_of_fitness_values)
@@ -120,6 +126,7 @@ def genetic_algo() -> None:
             # Doing mutation
             mutation(population[selected_parent[0]])
             mutation(population[selected_parent[1]])
+
     if not found_solution:
         print(-1)
 
