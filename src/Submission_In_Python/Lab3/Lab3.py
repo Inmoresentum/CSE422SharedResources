@@ -27,7 +27,8 @@ def create_initial_population(size: int) -> None:
         population.append(list())
         for j in range(number_of_batsmen):
             # Generate A random number and check if it's greater than certain
-            # threshold which is in this case 50 or not.
+            # threshold which is in this case 50 or not
+            # if yes then take it else leave it.
             random_number: int = random.randint(0, 100)
             if random_number > 50:
                 population[i].append(1)
