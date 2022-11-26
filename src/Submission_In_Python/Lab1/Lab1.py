@@ -77,7 +77,7 @@ starting_node: str = input("Start node: ")
 ending_node: str = input("Destination: ")
 a_start_search(starting_node, ending_node)
 
-# If no path found then simply print "NO PATH FOUND" and then exit
+# If no path found, then simply print "NO PATH FOUND" and then exit
 if distance.get(ending_node) == int(1e9):
     print("NO PATH FOUND")
     sys.exit(0)
