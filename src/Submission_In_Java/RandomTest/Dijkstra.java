@@ -27,7 +27,7 @@ public class Dijkstra {
             graph.get(n2).add(new Pair(n1, cost));
         }
 
-        dijkastra(1);
+        dijkstra(1);
 
         for (int i = 1; i <= v; i++) {
             pw.println("distance of " + i + " is " + distance[i]);
@@ -49,7 +49,7 @@ public class Dijkstra {
         pw.close(); // Closing
     }
 
-    private static void dijkastra(int source) {
+    private static void dijkstra(@SuppressWarnings("SameParameterValue") int source) {
         Arrays.fill(distance, (int) 1e9);
         Arrays.fill(parent, -1);
         distance[source] = 0;

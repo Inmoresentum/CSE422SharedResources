@@ -12,7 +12,7 @@ public class Question2 {
     private static int[][] cost;
     private static int m, n;
 
-    // Have to not yet implemented the file input and output. Might want to do that as you can see !!!
+    // Have not yet implemented the file input and output. Might want to do that when you can.
     public static void main(String[] args) throws IOException {
         m = Integer.parseInt(new StringTokenizer(br.readLine()).nextToken());
         n = Integer.parseInt(new StringTokenizer(br.readLine()).nextToken());
@@ -27,7 +27,7 @@ public class Question2 {
         for (var s : graph) {
             pw.println(Arrays.toString(s));
         }
-        // Time to Submission_In_Java.RandomTest.BFS from each Alien Position
+        // Time to do a BFS from each Alien Position
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (graph[i][j] == 'A') {

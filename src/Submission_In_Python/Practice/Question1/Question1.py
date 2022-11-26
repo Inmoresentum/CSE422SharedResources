@@ -6,7 +6,7 @@ graph: [[str]] = []
 while True:
     try:
         graph.append(input().split(" "))
-    except:
+    except EOFError:
         break
 
 isVisited: [[bool]] = []
