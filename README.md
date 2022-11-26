@@ -4,7 +4,7 @@ This repository contains CSE422 Lab Assignment(s) solutions in **_Java_** and **
 
 ## System Requirements
 
-To test and run the application or if you want ot modify things according to your needs
+To test and run the application, or if you want to modify things according to your needs
 
 you will have to install the following things.
 
@@ -25,7 +25,8 @@ you will have to install the following things.
 
 2. Python
 
-   `python` version **3.10** or higher. Download [python](https://www.python.org/downloads/) if you don't have it
+   `python` version **3.10.8** or higher.
+   Download [python](https://www.python.org/downloads/) if you don't have it
    already.
 
    To check your version of python, run:
@@ -33,7 +34,7 @@ you will have to install the following things.
    ```shell
     python --version
    ```
-    - **Note**: Unix like operating system (`OS X, GNU/Linux and BSD`) `python` comes with the operating system itself.
+    - **Note**: Unix like operating systems (`OS X, GNU/Linux and BSD`) `python` comes with the operating system itself.
 
 ## Setup
 
@@ -58,7 +59,7 @@ To set up, please follow these steps:
 
 You've found a bug in the source code, a mistake in the documentation? You can help
 by [submitting an issue on GitHub](https://github.com/Inmoresentum/CSE422SharedResources/issues). Before you create an
-issue, make sure to search the issue archive -- your issue may have already been addressed!
+issue, make sure to search for the issue archive -- your issue may have already been addressed!
 
 Please try to create bug reports that are:
 

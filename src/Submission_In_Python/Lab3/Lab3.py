@@ -26,9 +26,9 @@ def create_initial_population(size: int) -> None:
     for i in range(size):
         population.append(list())
         for j in range(number_of_batsmen):
-            # Generate A random number and check if it's greater than certain
+            # Generate A random number and check if it's greater than a certain
             # threshold which is in this case 50 or not
-            # if yes then take it else leave it.
+            # if yes, then take it else leave it.
             random_number: int = random.randint(0, 100)
             if random_number > 50:
                 population[i].append(1)
@@ -48,7 +48,7 @@ def calculate_fitness(cur_configuration: list[int]) -> int:
 
 
 def select_two_parent(fitness_values: list[int]) -> list[int]:
-    # Need to generate two random number,
+    # Need to generate two random numbers,
     # then do a battle against them and then take the winning one.
     # repeat it again for second parent as well!
     pair: list[int] = []
@@ -107,7 +107,7 @@ def genetic_algo() -> None:
         print(f"'{list_of_batsmen[i][0]}',", end=" ")
     print(f"'{list_of_batsmen[number_of_batsmen - 1][0]}']")
     for i in range(MAX_NUMBER_OF_ITERATION):
-        # First we need to check the fitness values of population
+        # First, we need to check the fitness values of the population
         # if any configuration meets the requirements then take it.
         # else continue with genetic algorithm
         for j in range(len(population)):
