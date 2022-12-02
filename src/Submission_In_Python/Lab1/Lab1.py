@@ -92,5 +92,5 @@ path.append(starting_node)
 path.reverse()
 
 for i in range(len(path) - 1):
-    print(f"""{path[i]} -> """, end="")
+    print(f"{path[i]} -> ", end="")
 print(path[len(path) - 1])
