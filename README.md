@@ -34,7 +34,12 @@ you will have to install the following things.
    ```shell
     python --version
    ```
-    - **Note**: Unix like operating systems (`OS X, GNU/Linux and BSD`) `python` comes with the operating system itself.
+   - **Note**: Unix like operating systems (`OS X, Linux and BSD`) `python` comes with the operating system itself.
+     So, I recommend using any _**virtual environment**_ instead of using the _**system environment**_ which can break
+     things easily.
+     You can
+     use [miniconda](https://docs.conda.io/en/main/miniconda.html), [virtualenv](https://virtualenv.pypa.io/en/latest/)
+     or any other environment of your choice.
 
 ## Setup
 
