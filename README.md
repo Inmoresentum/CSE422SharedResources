@@ -12,7 +12,10 @@ you will have to install the following things.
 
    `jdk` version **18.0.2** or higher. Download [jdk](https://www.oracle.com/java/technologies/downloads/) if you don't
    have it already.
-
+   
+   If you are on `unix` like system, you can use [SDK MAN](https://sdkman.io/) 
+   which has certain advantages over other methods.
+   
    To check your version of java, run:
 
    ```shell
