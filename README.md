@@ -1,4 +1,4 @@
-# CSE422 Fall 2022 Lab(s)
+<h1 align="center"> CSE422 Fall 2022 Lab(s)</h1>
 
 This repository contains CSE422 Lab Assignment(s) solutions in **_Java_** and **_Python_**.
 
@@ -53,7 +53,7 @@ To set up, please follow these steps:
    Make sure that you have [git](https://git-scm.com/downloads) installed. To check run `git --version` in your
    terminal.
    ```shell
-    git clone https://github.com/Inmoresentum/CSE422SharedResources
+    git clone https://github.com/Inmoresentum/CSE422SharedResources.git
    ```
 
 2. Change directory to the project directory
